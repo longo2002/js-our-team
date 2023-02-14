@@ -14,7 +14,6 @@ const ourTeam = [
 console.log(ourTeam)
 
 for (let i = 0; i < ourTeam.length ; i++) {
-    let divString = `<div class="cards">${ourTeam[i]}</div>`
-    let imgString = `<img src="./img/${ourTeam[i].slice(-1) }" alt="foto-collega">`
-    container.innerHTML += imgString + divString 
+    let divString = `<div class="cards"><img class="cards" src="./img/${ourTeam[i].slice(-1) }" alt="foto-collega">${ourTeam[i]}</div>`
+    container.innerHTML +=  divString 
 }
